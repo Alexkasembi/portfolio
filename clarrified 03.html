@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Kasembi Munguti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-emphasis-color: rgb(245, 11, 11);
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ece6e6;
+            background-image: url(markus-spiske-iar-afB0QQw-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #03121605;
+            color: #eff7ef;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        
+        .profile h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .profile p {
+            font-size: 1.2rem;
+        }
+        
+        nav {
+            background-color: #0b312f;
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        nav ul li a::shadow {
+            color: #00bcd4;
+        }
+        
+        section {
+            padding: 2rem 0;
+            background-color: #95e21885;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(154, 223, 223, 0.712);
+        }
+        
+        section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .project {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .project h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        section#skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+        }
+        
+        section#skills ul li {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: #442d6d;
+            border-radius: 5px;
+        }
+        
+        section#contact {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #181515;
+            color: #f1e3e7;
+        }
+        
+        section#contact p {
+            font-size: 1.2rem;
+        }
+        
+        section#contact a {
+            color: #0c7ef0;
+            text-decoration: none;
+        }
+        
+        section#contact a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #e7dede;
+            color: #130101;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="profile 404.JPG" alt="Profile Picture">
+
+            <h1>Alex Kasembi</h1>
+            <p>Project Manager</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Experienced Software developer with a passion for creating dynamic and responsive software. Proficient in HTML, CSS, JavaScript, and modern software development frameworks.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Traffic Sign Recognition</h3>
+            <p>
+                <dl>
+                <h4>Project overview</h4> 
+            
+                
+                <dd>The goal of this project is to create a high-quality annotated dataset of traffic signs for training a machine learning model used in self-driving cars.</dd>
+
+                <dt>Steps Involved:</dt>
+                <dd>1. Data Collection</dd>
+                   - Collect images from various sources, such as public datasets (e.g., GTSRB - German Traffic Sign Recognition Benchmark) or capture new images using car-mounted cameras in different environments and weather conditions.
+                   - Ensure diversity in the dataset by including images from urban, suburban, and rural areas, as well as varying lighting and weather conditions.
+                
+                <dd>2. Define Annotation Guidelines</dd>
+                   - Create a detailed annotation guide that specifies how to annotate each type of traffic sign.
+                   - Include examples of correctly and incorrectly annotated images to ensure consistency among annotators.
+                   - Define the categories of traffic signs to be annotated (e.g., stop sign, yield sign, speed limit sign, pedestrian crossing sign).
+                
+                <dd>3. Annotation Tool Selection</dd>
+                   - Choose an annotation tool that supports bounding box annotation and labeling, such as LabelImg, VGG Image Annotator (VIA), or a web-based tool like CVAT (Computer Vision Annotation Tool).
+                
+                <dd>3. Annotation Tool Selection</dd>
+                   - Annotators will draw bounding boxes around each traffic sign in the images and label them according to the predefined categories.
+                   - Ensure that bounding boxes are tightly fitted around the signs and do not include extraneous background.
+                   - Multiple annotators may review each image to ensure accuracy and consistency.
+                
+                <dd>5. Quality Assurance</dd>
+                   - Implement a quality assurance process where a separate team of reviewers checks the annotations for accuracy and consistency.
+                   - Use inter-annotator agreement metrics to measure consistency between different annotators.
+                   - Correct any errors or discrepancies identified during the review process.
+                
+                <dd>6. Data Augmentation</dd>
+                   - Perform data augmentation techniques to increase the diversity of the dataset, such as rotating, flipping, scaling, and adjusting the brightness of the images.
+                   - Ensure that augmented images are also correctly annotated.
+                
+                <dd>7. Dataset Preparation</dd>
+                   - Organize the annotated images into a structured format (e.g., COCO format or Pascal VOC format).
+                   - Split the dataset into training, validation, and test sets to evaluate the performance of the model accurately.
+                
+                <dd>8. Model Training and Evaluation</dd>
+                   - Use the annotated dataset to train a traffic sign recognition model (e.g., using deep learning frameworks like TensorFlow or PyTorch).
+                   - Evaluate the model's performance on the validation and test sets to ensure it accurately recognizes and classifies traffic signs.
+                
+                <dt>Example Annotation Guidelines:</dt>
+                - Bounding Box Criteria:
+                  - The bounding box should tightly fit the traffic sign, leaving minimal space around the edges.
+                  - Overlapping signs should have separate bounding boxes.
+                
+                - Labeling Criteria:
+                  - Each traffic sign should be labeled according to its category (e.g., "stop_sign," "yield_sign," "speed_limit_30," "pedestrian_crossing").
+                  - Use consistent naming conventions for labels.
+                
+                - Quality Check:
+                  - Review 10% of the annotated images for accuracy.
+                  - Use feedback loops to provide annotators with corrections and tips for improvement.
+                
+                -Tools and resources
+                - Annotation Tools: LabelImg, CVAT, VIA
+                - Public Datasets: GTSRB, LISA Traffic Sign Dataset
+                - Frameworks for Model Training: TensorFlow, PyTorch
+                <dl>
+            </p>
+        </div>
+        <div class="project">
+            <h3>Sentiment Analysis</h3>
+            <p>
+                
+                
+                
+                <h4>Project Overview</h4>
+                -The objective of this project is to create an annotated dataset of customer reviews to train a machine learning model for sentiment analysis. The dataset will consist of text reviews labeled with sentiment categories such as positive, negative, and neutral.
+                
+                <dd>Steps Involved:</dd>
+                <dd>1. Data Collection:</dd>
+                   - Collect text reviews from various sources, such as e-commerce websites, social media platforms, and review websites.
+                   - Ensure a diverse dataset by including reviews from different product categories, services, and industries.
+                
+                <dd>2. Define Annotation Guidelines:</dd>
+                   - Create a detailed annotation guide that specifies how to annotate the sentiment of each review.
+                   - Define sentiment categories (e.g., positive, negative, neutral) and provide examples for each category.
+                   - Include rules for handling ambiguous or mixed sentiments.
+                
+                <dd>3. Annotation Tool Selection:</dd>
+                   - Choose an annotation tool that supports text annotation, such as Doccano, Prodigy, or Labelbox.
+                
+                <dd>4. Annotation Process:</dd>
+                   - Annotators will read each review and label it with the appropriate sentiment category.
+                   - Ensure consistent labeling by following the predefined guidelines.
+                   - Allow annotators to flag reviews that are difficult to classify or require further discussion.
+                
+                <dd>5. Quality Assurance:</dd>
+                   - Implement a quality assurance process where a separate team of reviewers checks the annotations for accuracy and consistency.
+                   - Use inter-annotator agreement metrics (e.g., Cohen's kappa) to measure consistency between different annotators.
+                   - Correct any errors or discrepancies identified during the review process.
+                
+                <dd>6. Data Augmentation:</dd>
+                   - Perform data augmentation techniques to increase the diversity of the dataset, such as paraphrasing, synonym replacement, and sentence shuffling.
+                   - Ensure that augmented texts are also correctly annotated.
+                
+                <dd>7. Dataset Preparation:</dd>
+                   - Organize the annotated texts into a structured format (e.g., CSV, JSON).
+                   - Split the dataset into training, validation, and test sets to evaluate the performance of the model accurately.
+                
+                <dd>8. Model Training and Evaluation:</dd>
+                   - Use the annotated dataset to train a sentiment analysis model (e.g., using deep learning frameworks like TensorFlow, PyTorch, or transformers like BERT).
+                   - Evaluate the model’s performance on the validation and test sets to ensure it accurately classifies sentiments.
+                
+                <dd>Example Annotation Guidelines:</dd>
+                - Sentiment Categories:
+                  - Positive: Reviews that express satisfaction or positive experiences (e.g., "I love this product!").
+                  - Negative: Reviews that express dissatisfaction or negative experiences (e.g., "This product is terrible.").
+                  - Neutral: Reviews that are neither positive nor negative or express mixed sentiments (e.g., "The product is okay, not great but not bad either.").
+                
+                <dd>- Ambiguous Cases:</dd>
+                  - If a review contains both positive and negative sentiments, classify it based on the overall sentiment expressed.
+                  - Flag reviews that are too ambiguous to classify definitively.
+                
+                <dd>- Quality Check:</dd>
+                  - Review 10% of the annotated reviews for accuracy.
+                  - Use feedback loops to provide annotators with corrections and tips for improvement.
+                
+                <dt>Tools and Resources:</dt>
+                <dd>- Annotation Tools: Doccano, Prodigy, Labelbox</dd>
+                <dd>- Public Datasets for Reference: IMDb Reviews, Yelp Reviews, Amazon Product Reviews</dd>
+                <dd>-Frameworks for Model Training: TensorFlow, PyTorch, Hugging Face Transformers</dd>
+
+            </dl>         
+
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Cybersecurity and Ethical Hacking</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: mungutialex316@gmail.com</p>
+        <p>Phone: (+254) 742 105630</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/AlexKasembi">linkedin.com/in/alexkasembi</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alex Kasembi. All rights reserved.</p>
+    </footer>
+</body>
+</html>

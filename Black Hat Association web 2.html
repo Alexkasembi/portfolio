@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Form with Background Image</title>
+    <style>
+        body {
+        
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        .submit{
+            width: 200px;
+            border-radius: 10px;
+            height: 30px;
+            background-color: aqua;
+            font-weight: bold;
+            margin-left: 145px;
+        }
+        
+
+        .container {
+            align-items: center;
+            background-color: rgba(245, 200, 270, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+            width:500px;
+            display: flex;
+            flex-direction: column;
+            background-image: url(markus-spiske-iar-afB0QQw-unsplash.jpg);
+            color: red;
+        
+        
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select,
+        input[type="password"],
+        input[type="tel"] {
+            width: 300px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-left: 100px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        label {
+            color:yellow;
+        }
+        .container2{
+            width: 500px;
+            padding-left: 20px;
+            border-radius: 10px;
+            padding-bottom: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="container">
+     <div class="container2">
+    <h2 style="color: blue">BLACK HAT SIGN UP</h2>
+    <form action="/submit-form" method="post">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="abcdef"><br>
+
+        <label for="email">Email:</label>
+        <input style="margin-left: 123px;" type="email" id="email" name="email" placeholder="abcd123@gmail.com"><br>
+
+        <label for="username">Username:</label>
+        <input style="margin-left: 91px;" type="text" id="username" name="username" placeholder="abcde"><br>
+
+        <label for="yearofBirth">Year of Birth:</label>
+        <select style="margin-left: 79px;"  id="yearofBirth" name="yearofBirth">
+            <option value="select year of birth">Select Year of Birth</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+            <option value="1982">1982</option>
+            <option value="1981">1981</option>
+            <option value="1980">1980</option>
+
+        </select><br>
+
+        <label for="monthofBirth">Month of Birth:</label>
+        <select style="margin-left: 69px;" id="monthofBirth" name="monthofBirth">
+            <option value="Select Month of Birth"></option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+
+        </select><br>
+
+        <label for="dayOfBirth">Day of Birth:</label>
+        <input style="margin-left: 86px;" type="text" id="dayOfBirth" name="dayOfBirth" placeholder="dd/mm/yyyy"><br>
+
+        <label for="password">Password:</label>
+        <input  type="password" id="password" name="password" placeholder=" Password"><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input style="margin-left: 39px;" type="password" id="confirmPassword" name="confirmPassword" placeholder="Password"><br>
+
+        <label for="phone">Phone:</label>
+        <input style="margin-left: 120px;" type="tel" id="phone" name="phone" placeholder="+xxx xx xxx xxx"><br>
+
+        <input class="submit" type="submit" value="Submit">
+    </form>
+    </div>
+</div>
+
+</body>
+</html>
